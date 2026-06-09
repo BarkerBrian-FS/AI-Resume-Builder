@@ -2,7 +2,7 @@
 const Layout = () => {
   return (
     <>
-        <h1>Layout Page</h1>
+    <h1>Layout Page</h1>
     </>
   )
 }
