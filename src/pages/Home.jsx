@@ -1,10 +1,10 @@
 import Banner from "../components/Home/Banner"
-
+import Hero from "../components/Home/Hero"
 const Home = () => {
   return (
     <>
     <Banner /> 
-    <h1>Home Page</h1>
+    <Hero />
     </>
   )
 }
