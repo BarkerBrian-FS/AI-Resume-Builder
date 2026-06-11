@@ -1,11 +1,14 @@
 import { Outlet } from "react-router-dom"
+import NavBar from "../components/NavBar"
 
 const Layout = () => {
   return (
     <>
-    <h1>Layout Page</h1>
     <div>
-      <Outlet/>
+      <div className="min-h-screen bg-gray-50">
+        <NavBar />
+        <Outlet/>
+      </div>
     </div>
     </>
   )
