@@ -82,8 +82,8 @@ const Hero = () => {
                 </div>
 
                 {/* Headline + CTA */}
-                <h1 className="text-5xl md:text-6xl font-semibold max-w-5xl text-center mt-4 md:leading-[70px]">
-                    Land Your Dream Job with <span className=" bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent text-nowrap">AI Powered </span> Resume.
+                <h1 className="text-5xl md:text-6xl font-semibold max-w-5xl text-center mt-4 md:leading-17.5">
+                    Land Your Dream Job with <span className=" bg-linear-to-r from-green-700 to-green-600 bg-clip-text text-transparent text-nowrap">AI Powered </span> Resume.
                 </h1>
 
                 <p className="max-w-md text-center text-base my-7">Create, edit and download professional resume with AI powered assistance.</p>
