@@ -18,7 +18,7 @@ const NavBar = () => {
             </Link>
             <div className="flex items-center gap-4 text-sm">
                 <p className="max-sm:hidden">Hi { user?.name } </p>
-                <button onClick={ logOutUser }className="bg-white hover:bg-slate-200 border-gray-300 px-7 py-1.5
+                <button onClick={ logOutUser }className="bg-white hover:bg-slate-200 border-4 border-gray-100 px-7 py-1.5
                 rounded-full active:scale-95 transition-all">Logout</button>
             </div>
         </nav>
