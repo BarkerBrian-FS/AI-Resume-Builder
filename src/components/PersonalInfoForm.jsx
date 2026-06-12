@@ -40,7 +40,7 @@ const PersonalInfoForm = ({data, onChange, removeBackground, setRemoveBackground
                         </div>
                         <span className="dot absolute left-1 top-1 w-3 h-3 bg-white rounded-full
                         transition-transform duration-200 ease-in-out 
-                        peer-checked:translate x-4"></span>
+                        peer-checked:translate-x-4"></span>
                     </label>
                 </div>
             )}
