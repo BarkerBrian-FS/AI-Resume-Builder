@@ -79,13 +79,16 @@ const ExperienceForm = ({data, onChange}) => {
                                 <span className="text-sm text-gray-700">Currently Working Here</span>
                         </label>
                         <div className="space-y-2">
-                            <div>
-                                <label>Job Description</label>
-                                <button>
+                            <div className="flex items-center justify-between">
+                                <label className="text-sm font-medium">Job Description</label>
+                                <button className="flex items-center gap-1 px-2 py-1 text-xs bg-purple-100
+                                text-purple-700 rounded hover:bg-purple-200 transition-colors disabled:opacity-50">
                                     <Sparkles className="w-3 h-3"/> 
                                     Enhance With AI
                                 </button>
                             </div>
+                            <textarea value={experience.description || ""} onChange={(e) => updateExperience(index, "description", e.target.value)} rows={6} className="w-full text-sm px-3 py-2 rounded-lg resize-none" 
+                            placeholder="Describe your key responsibilities and achievements..."/> 
                         </div>
                     </div>
                 ))}
