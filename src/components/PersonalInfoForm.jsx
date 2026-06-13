@@ -63,7 +63,7 @@ const PersonalInfoForm = ({data, onChange, removeBackground, setRemoveBackground
                         text-gray-600">
                             <Icon className="size-4"/>
                             {field.label}
-                            {field.required && (<span className="text-red-500">*</span>)}
+                            {field.required && <span className="text-red-500">*</span>}
                         </label>
                         <input type={field.type} value={data[field.key] || ""} onChange={(e) => handleChange(field.key, e.target.value)} className="mt-1
                         w-full py-2 border borde-gray-300 rounded-lg focus:ring focus:ring-blue-500 focus:border-blue-500 outline-none
