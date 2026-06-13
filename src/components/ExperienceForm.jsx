@@ -1,6 +1,4 @@
 import { Briefcase, Plus, Sparkles, Trash2 } from "lucide-react"
-import { div } from "three/tsl";
-
 
 const ExperienceForm = ({data, onChange}) => {
 
@@ -17,7 +15,7 @@ const ExperienceForm = ({data, onChange}) => {
     }
 
     const removeExperience = (index) => {
-        const updated = data.filer((_,i) => i !== index);
+        const updated = data.filter((_,i) => i !== index);
         onChange(updated)
     }
 
