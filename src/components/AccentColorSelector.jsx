@@ -30,7 +30,7 @@ const AccentColorSelector = ({onChange, selectedColor}) => {
             rounded-md border border-gray-200 shadow-sm ">
                 {colors.map((color) => (
                     <div key={color.value} className="relative cursor-pointer group flex flex-col"
-                    onClick={() => {onChange(color.value)}}>
+                    onClick={() => {onChange(color.value); setIsOpen(false)}}>
                         <div className="w-12 h-12 rounded-full border-2 border-transparent
                         group-hover:border-black/25 transition-colors" style={{backgroundColor : color.value}}>
                         </div>
