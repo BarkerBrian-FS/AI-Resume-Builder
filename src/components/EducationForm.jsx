@@ -8,7 +8,7 @@ const EducationForm = ({data, onChange}) => {
             institution: "",
             degree: "",
             field: "",
-            grad_date: "", 
+            graduation_date: "", 
             gpa: ""
         };
         onChange([...data, newEducation])
@@ -67,8 +67,8 @@ const EducationForm = ({data, onChange}) => {
                              <input value={education.field || ""} onChange={(e) => updateEducation(index, "field", e.target.value)} 
                             type="text" className="px-3 py-2 text-sm " placeholder="Field of Study"/>
 
-                            <input value={education.grad_date || ""} onChange={(e) => updateEducation(index, "grad_date", e.target.value)} 
-                            type="month" className="px-3 py-2 text-sm" />
+                            <input value={education.graduation_date || ""} onChange={(e) => updateEducation(index, "graduation_date", e.target.value)} 
+                            type="month" className="px-3 py-2 text-sm "/>
                         </div>
 
                             <input value={education.gpa || ""} onChange={(e) => updateEducation(index, "gpa", e.target.value)} 
