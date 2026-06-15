@@ -9,6 +9,7 @@ import AccentColorSelector from "../components/AccentColorSelector";
 import ProfessionalSummaryForm from "../components/ProfessionalSummaryForm";
 import ExperienceForm from "../components/ExperienceForm";
 import EducationForm from "../components/EducationForm";
+import ProjectForm from "../components/ProjectForm";
 
 const ResumeBuilder = () => {
 
@@ -116,6 +117,9 @@ const ResumeBuilder = () => {
                 )}
                 {activeSection.id === "education" && (
                   <EducationForm data={resumeData.education} onChange={(data) => setResumeData(prev => ({...prev, education: data}))}/>
+                )}
+                {activeSection.id === "project" && (
+                  <ProjectForm data={resumeData.project} onChange={(data) => setResumeData(prev => ({...prev, project: data}))}/>
                 )}
             </div>
           </div>
