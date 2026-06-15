@@ -75,10 +75,11 @@ const MinimalTemplate = ({ data, accentColor }) => {
                     </h2>
 
                     <div className="space-y-4">
-                        {data.project.map((proj, index) => (
+                        {data.project.map((project, index) => (
                             <div key={index} className="flex flex-col gap-2 justify-between items-baseline">
-                                <h3 className="text-lg font-medium ">{proj.name}</h3>
-                                <p className="text-gray-600">{proj.description}</p>
+                                <h3 className="text-lg font-medium ">{project.name}</h3>
+                                <p className="text-gray-700">{project.type}</p>
+                                <p className="text-gray-600">{project.description}</p>
                             </div>
                         ))}
                     </div>

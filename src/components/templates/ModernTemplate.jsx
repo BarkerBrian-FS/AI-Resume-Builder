@@ -102,18 +102,24 @@ const ModernTemplate = ({ data, accentColor }) => {
 						</h2>
 
 						<div className="space-y-6">
-							{data.project.map((p, index) => (
+							{data.project.map((project, index) => (
 								<div key={index} className="relative pl-6 border-l border-gray-200" style={{borderLeftColor: accentColor}}>
 
 
 									<div className="flex justify-between items-start">
 										<div>
-											<h3 className="text-lg font-medium text-gray-900">{p.name}</h3>
+											<h3 className="text-lg font-medium text-gray-900">{project.name}</h3>
 										</div>
 									</div>
-									{p.description && (
+									{project.description && (
+										<div className="text-gray-800 leading-relaxed text-md mt-3">
+											{project.type}
+										</div>
+									)}
+									{project.description && (
+										
 										<div className="text-gray-700 leading-relaxed text-sm mt-3">
-											{p.description}
+											{project.description}
 										</div>
 									)}
 								</div>
