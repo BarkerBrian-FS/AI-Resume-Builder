@@ -14,7 +14,7 @@ const Preview = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   const loadResume = async () => {
-    setResumeData(dummyResumeData.find(resume => resume.id === 
+    setResumeData(dummyResumeData.find(resume => resume._id === 
       resumeId || null));
       setIsLoading(false);
   }
@@ -40,7 +40,7 @@ const Preview = () => {
         h-screen">
           <p className="text-center text-6xl text-slate-400
           font-medium">Resume Not Found</p>
-          <a href="" className="mt-6 bg-green-500 hover:bg-green-600 text-white
+          <a href="/" className="mt-6 bg-green-500 hover:bg-green-600 text-white
           rounded-full px-6 h-9 m-1 ring-offset-1 ring-1 ring-green-400 flex items-center
           transition-colors">
             <ArrowLeftIcon className="mr-2 size-4"/>
